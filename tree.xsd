@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- Root element (inferred) -->
+  <xs:element name="tree">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="measurements" type="measurementsType"/>
+        <xs:element name="characteristics" type="characteristicsType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Measurements type -->
+  <xs:complexType name="measurementsType">
+    <xs:sequence>
+      <xs:element name="measure" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="date" type="xs:dateTime" use="required"/>
+          <xs:attribute name="diameter" type="xs:decimal" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Characteristics type -->
+  <xs:complexType name="characteristicsType">
+    <xs:attribute name="isFutureTree" type="xs:boolean" use="required"/>
+    <xs:attribute name="isRingBarked" type="xs:boolean" use="required"/>
+    <xs:attribute name="isHabitatTree" type="xs:boolean" use="required"/>
+    <xs:attribute name="isCut" type="xs:boolean" use="required"/>
+    <xs:attribute name="isMarkedForFelling" type="xs:boolean" use="required"/>
+  </xs:complexType>
+
+</xs:schema>
