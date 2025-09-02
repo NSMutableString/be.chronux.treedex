@@ -1,0 +1,6 @@
+site_name: TreeDex - Uw digitale bosassistent
+nav:
+  - Home: index.md
+  - Densiometer: densiometer.md
+markdown_extensions:
+  - admonition
