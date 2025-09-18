@@ -222,16 +222,15 @@ footer {
 .footer-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
-    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer-icon i {
-    font-size: 24px;
-    color: white;
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .footer-links {
