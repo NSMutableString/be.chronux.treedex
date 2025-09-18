@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:emilbaehr.github.io)",
+      "Bash(open index.html)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
